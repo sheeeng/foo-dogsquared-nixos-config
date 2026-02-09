@@ -130,10 +130,10 @@
     };
     "open-access-helper" = buildFirefoxXpiAddon {
       pname = "open-access-helper";
-      version = "2025.11";
+      version = "2026.2";
       addonId = "info@oahelper.org";
-      url = "https://addons.mozilla.org/firefox/downloads/file/4610394/open_access_helper-2025.11.xpi";
-      sha256 = "8bc1ab3ccd5b13bab9ecbb928b9f234351fd4fb1c383b614d052ab23a7a9ec7b";
+      url = "https://addons.mozilla.org/firefox/downloads/file/4687629/open_access_helper-2026.2.xpi";
+      sha256 = "b2abdf12b567427c337b016c2b5159240a5418b5760ce4b2a9becbe69ea311ea";
       meta = with lib;
       {
         homepage = "https://www.oahelper.org";
@@ -210,10 +210,10 @@
     };
     "simple-translate" = buildFirefoxXpiAddon {
       pname = "simple-translate";
-      version = "3.0.0";
+      version = "3.0.1";
       addonId = "simple-translate@sienori";
-      url = "https://addons.mozilla.org/firefox/downloads/file/4286113/simple_translate-3.0.0.xpi";
-      sha256 = "c9e36d1d8e32a223da367bdc83133f2436103eb5f16460c7cce2096376e78b68";
+      url = "https://addons.mozilla.org/firefox/downloads/file/4674724/simple_translate-3.0.1.xpi";
+      sha256 = "f8442e973cba5f3400fd3af8741b8692a98b486240ad9eb7014b84620693c996";
       meta = with lib;
       {
         homepage = "https://simple-translate.sienori.com";
