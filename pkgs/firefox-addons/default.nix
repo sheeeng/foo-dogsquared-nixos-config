@@ -287,15 +287,21 @@
     };
     "updateswh" = buildFirefoxXpiAddon {
       pname = "updateswh";
-      version = "0.6.8";
+      version = "0.7.0";
       addonId = "{157eb9f0-9814-4fcc-b0b7-586b3093c641}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/4217887/updateswh-0.6.8.xpi";
-      sha256 = "ad91373253a4b24b48ca8c409195bb4e3674f574e142a6fe917524823c9c9644";
+      url = "https://addons.mozilla.org/firefox/downloads/file/4765428/updateswh-0.7.0.xpi";
+      sha256 = "b71d1f8b02d60bb79d7e6c1457246c2961c9d3df2c1e5ad8c7fa69ad5189f412";
       meta = with lib;
       {
         description = "Check archival state of a source code repository and propose to update it if needed.";
         license = licenses.mit;
-        mozPermissions = [ "<all_urls>" "storage" "tabs" "activeTab" ];
+        mozPermissions = [
+          "storage"
+          "tabs"
+          "activeTab"
+          "<all_urls>"
+          "https://archive.softwareheritage.org/*"
+        ];
         platforms = platforms.all;
       };
     };
