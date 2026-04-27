@@ -287,10 +287,10 @@
     };
     "updateswh" = buildFirefoxXpiAddon {
       pname = "updateswh";
-      version = "0.7.0";
+      version = "0.9.0";
       addonId = "{157eb9f0-9814-4fcc-b0b7-586b3093c641}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/4765428/updateswh-0.7.0.xpi";
-      sha256 = "b71d1f8b02d60bb79d7e6c1457246c2961c9d3df2c1e5ad8c7fa69ad5189f412";
+      url = "https://addons.mozilla.org/firefox/downloads/file/4778739/updateswh-0.9.0.xpi";
+      sha256 = "21af7eb3a4cf3e2de54d579da34d7401fe4244e42a6f567c521ebf6cd1f1f623";
       meta = with lib;
       {
         description = "Check archival state of a source code repository and propose to update it if needed.";
@@ -299,8 +299,21 @@
           "storage"
           "tabs"
           "activeTab"
-          "<all_urls>"
+          "scripting"
           "https://archive.softwareheritage.org/*"
+          "*://github.com/*"
+          "*://bitbucket.org/*"
+          "*://gitlab.com/*"
+          "*://0xacab.org/*"
+          "*://gite.lirmm.fr/*"
+          "*://framagit.org/*"
+          "*://gricad-gitlab.univ-grenoble-alpes.fr/*"
+          "*://git.rampin.org/*"
+          "*://codeberg.org/*"
+          "*://git.disroot.org/*"
+          "*://git.minetest.land/*"
+          "*://repo.radio/*"
+          "*://git.fsfe.org/*"
         ];
         platforms = platforms.all;
       };
